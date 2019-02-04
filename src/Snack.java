@@ -2,17 +2,19 @@ package snackbarApp;
 
 public class Snack
 {
-    private int id;
-    public int vendingMachine id;
+    private int id = 0;
+    public int vendingMachineId;
     public String name;
     public int quantity;
     public double cost;
 
-    public Snack(String name, int quantity, double cost)
+    public Snack(String name, int quantity, double cost, int vendingMachineId)
     {
+	this.id = id++;
 	this.name = name;
 	this.quantity = quantity;
 	this.cost = cost;
+	this.vendingMachineId = vendingMachineId;
     }
 
     public String setName(String name)
