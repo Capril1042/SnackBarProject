@@ -61,14 +61,14 @@ public class Main
 
 	// Snack 3 gets 12 more. Print quantity of snack 3.
 	s3.addQuantity(12);
-	System.out.println("The quantity of "+ s3.name + "is now " + s3.getQuantity());
+	System.out.println("The quantity of "+ s3.name + " left is now " + s3.getQuantity());
 
 
 	// Customer 2 buys 3 of snack 3. Print Customer 2 Cash on hand. Print quantity of snack 3.
 	c2.buy(s3.getTotalCost(3));
 	s3.buySnack(3);
 	System.out.println("Customer 2, " + c2.name + " now has $" + c2.getCash() + " on hand.");
-	System.out.println("The quantity of "+ s3.name + "is now " + s3.getQuantity());
+	System.out.println("The quantity of "+ s3.name + " left is now " + s3.getQuantity());
 
     }
 

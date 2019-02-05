@@ -25,7 +25,8 @@ public class Customer
 
     public double addCash(double cash)
     {
-	return this.cash + cash;
+	this.cash = this.cash + cash;
+	return this.cash;
     }
 
     public double buy(double cash)
