@@ -2,7 +2,7 @@ package snackbarApp;
 
 public class VendingMachine
 {
-    private static int id = 0;
+    public static int id = 0;
     public String name;
 
     public VendingMachine (String name)
@@ -16,7 +16,7 @@ public class VendingMachine
 	return name;
     }
 
-    public int setName(String name)
+    public void setName(String name)
     {
 	this.name = name;
     }

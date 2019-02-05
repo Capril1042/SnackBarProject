@@ -17,28 +17,30 @@ public class Snack
 	this.vendingMachineId = vendingMachineId;
     }
 
-    public String setName(String name)
+    public void setName(String name)
     {
 	this.name = name;
     }
 
     public int getQuantity()
     {
-	return quantity;
+	return this.quantity;
     }
 
     public int addQuantity(int quantity)
     {
-	this.quantity = quantity + quantity;
+	this.quantity = this.quantity + quantity;
+	return this.quantity;
     }
 
     public int buySnack(int quantity)
     {
-	this.quantity = quantity - quantity;
+	this.quantity = this.quantity - quantity;
+	return this.quantity;
     }
 
     public double getTotalCost(int quantity)
     {
-	this.cost = quantity * cost;
+	return quantity * this.cost;
     }
 }
